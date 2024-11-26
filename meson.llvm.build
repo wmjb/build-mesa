@@ -16,10 +16,10 @@ deps = ['LLVMAggressiveInstCombine', 'LLVMAnalysis', 'LLVMAsmParser', 'LLVMAsmPr
         'LLVMSelectionDAG', 'LLVMSupport', 'LLVMSymbolize', 'LLVMTarget',
         'LLVMTargetParser', 'LLVMTextAPI', 'LLVMTransformUtils', 'LLVMVectorize']
 
-if host_machine.cpu_family() == 'aarch32'
+if host_machine.cpu_family() == 'ARM'
   folder = '../../../llvm-arm'
-  deps += ['LLVMAArch32AsmParser', 'LLVMAArch32CodeGen', 'LLVMAArch32Desc',
-           'LLVMAArch32Disassembler', 'LLVMAArch32Info', 'LLVMAArch32Utils']
+  deps += ['LLVMARMAsmParser', 'LLVMARMCodeGen', 'LLVMARMDesc',
+           'LLVMARMDisassembler', 'LLVMAARMInfo', 'LLVMARMUtils']
 else
   if host_machine.cpu_family() == 'x86_64'
     folder = '../../../llvm-x64'
