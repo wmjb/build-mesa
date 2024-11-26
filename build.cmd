@@ -63,10 +63,10 @@ if "!TARGET_ARCH!" neq "!HOST_ARCH!" (
   set MESON_CROSS=--cross-file "%CD%\meson-%MESA_ARCH%.txt"
 ) else if "%MESA_ARCH%" equ "arm" (
   set LLVM_CROSS_CMAKE_FLAGS=
-  set MESON_CROSS=
+set MESON_CROSS=--cross-file "%CD%\meson-%MESA_ARCH%.txt"
 ) else if "%MESA_ARCH%" equ "x86" (
   set LLVM_CROSS_CMAKE_FLAGS=
-  set MESON_CROSS=
+set MESON_CROSS=--cross-file "%CD%\meson-%MESA_ARCH%.txt"
 )
 
 if "%MESA_ARCH%" equ "x86" (
