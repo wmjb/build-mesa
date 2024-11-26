@@ -38,10 +38,10 @@ if "%MESA_ARCH%" equ "x86" (
   set TARGET_ARCH=amd64
   set LLVM_TARGETS_TO_BUILD=X86
   set TARGET_ARCH_NAME=x86_64
-) else if "%MESA_ARCH%" equ "arm64" (
-  set TARGET_ARCH=arm64
-  set LLVM_TARGETS_TO_BUILD=AArch64
-  set TARGET_ARCH_NAME=aarch64
+) else if "%MESA_ARCH%" equ "arm" (
+  set TARGET_ARCH=arm
+  set LLVM_TARGETS_TO_BUILD=AArch32
+  set TARGET_ARCH_NAME=aarch32
 ) else if "%MESA_ARCH%" equ "x86" (
   set TARGET_ARCH=x86
   set LLVM_TARGETS_TO_BUILD=X86
