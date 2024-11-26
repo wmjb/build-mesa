@@ -19,7 +19,7 @@ deps = ['LLVMAggressiveInstCombine', 'LLVMAnalysis', 'LLVMAsmParser', 'LLVMAsmPr
 if host_machine.cpu_family() == 'ARM'
   folder = '../../../llvm-arm'
   deps += ['LLVMARMAsmParser', 'LLVMARMCodeGen', 'LLVMARMDesc',
-           'LLVMARMDisassembler', 'LLVMAARMInfo', 'LLVMARMUtils']
+           'LLVMARMDisassembler', 'LLVMARMInfo', 'LLVMARMUtils']
 else
   if host_machine.cpu_family() == 'x86_64'
     folder = '../../../llvm-x64'
