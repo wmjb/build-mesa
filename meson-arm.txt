@@ -4,8 +4,8 @@ cpp = 'cl.exe'
 
 [host_machine]
 system = 'windows'
-cpu_family = 'aarh32'
-cpu = 'aarch32'
+cpu_family = 'ARM'
+cpu = 'ARM'
 endian = 'little'
 
 [properties]
