@@ -10,8 +10,8 @@ if "%1" equ "x86" (
   set MESA_ARCH=x86
 ) else if "%1" equ "x64" (
   set MESA_ARCH=x64
-) else if "%1" equ "arm64" (
-  set MESA_ARCH=arm64
+) else if "%1" equ "arm" (
+  set MESA_ARCH=arm
 ) else if "%1" equ "x86" (
   set MESA_ARCH=x86
 ) else if "%1" neq "" (
@@ -21,8 +21,8 @@ if "%1" equ "x86" (
   set MESA_ARCH=x86
 ) else if "%PROCESSOR_ARCHITECTURE%" equ "AMD64" (
   set MESA_ARCH=x64
-) else if "%PROCESSOR_ARCHITECTURE%" equ "ARM64" (
-  set MESA_ARCH=arm64
+) else if "%PROCESSOR_ARCHITECTURE%" equ "ARM" (
+  set MESA_ARCH=arm
 ) else if "%PROCESSOR_ARCHITECTURE%" equ "x86" (
   set MESA_ARCH=x86
 ) else (
